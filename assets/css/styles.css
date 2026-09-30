@@ -1167,6 +1167,29 @@ em { font-style: normal; }
 .map-card__list span { color: var(--muted-2); }
 .map-card__list strong { text-align: right; }
 
+.map-card__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 13px 18px;
+  border-radius: var(--r-md);
+  border: 1px solid rgba(34, 211, 238, .34);
+  background: rgba(34, 211, 238, .08);
+  color: var(--cyan);
+  font-weight: 600;
+  font-size: .9rem;
+  text-align: center;
+  transition: background .25s ease, border-color .25s ease, transform .25s ease;
+}
+.map-card__link svg { width: 18px; height: 18px; flex: none; }
+.map-card__link:hover {
+  background: rgba(34, 211, 238, .16);
+  border-color: rgba(34, 211, 238, .6);
+  transform: translateY(-2px);
+}
+.map-card__link:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; }
+
 /* ---------- 11. Footer & to-top ---------- */
 .site-footer {
   position: relative;
